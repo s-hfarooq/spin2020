@@ -4,4 +4,4 @@ The workflow yaml file is located at [.github/workflows/workflow.yml](.github/wo
 
 You can find the output of the workflow in the [Actions tab](https://github.com/s-hfarooq/spin2020/actions)
 
-The script counting the number of lines in README is called [count.py](count.py)
+The script counting the number of lines in README is called [count.py](count.py) and the file it creates is called [out.html](out.html)
