@@ -23,11 +23,13 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
+    - name: Print head hash
+      run: |
+        head_hash=$(git rev-parse "$GITHUB_SHA")
+        echo HEAD is "${head_hash}"
 
     # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    #- name: Run a multi-line script
+    #  run: |
+    #    echo Add other actions to build,
+    #    echo test, and deploy your project.
