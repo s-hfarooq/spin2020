@@ -40,7 +40,7 @@ jobs:
         git commit -m "Automated out.html creation" -a | exit 0
 
     - name: Push
-        if: github.ref == 'refs/heads/master'
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{secrets.GITHUB_TOKEN}}
+      if: github.ref == 'refs/heads/master'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{secrets.GITHUB_TOKEN}}
